@@ -3,19 +3,20 @@ extends layout
 block content
   h1= title
   p This is a url shortener for #[a(href='https://www.freecodecamp.com' class="FCC") FreeCodeCamp]
+  p Created by #[a(href="http://www.allanarmstrong.xyz") Allan Armstrong]
 
   h2 USAGE
 
   h3 Input
-  code http://urlshorta.herokuapps.com/short/http://www.foo.com
+  code http://urlshorta.herokuapp.com/short/http://www.foo.com
 
   h3 Output
   code {"url":"http://www.foo.com","code":1009}
 
   h2 Example
   h3 Input
-  code http://urlshorta.herokuapps.com/short/http://www.google.com
+  code http://urlshorta.herokuapp.com/short/http://www.google.com
   h3 Output
   code {"url":"http://www.google.com","code":1000}
   h3 Redirect
-  code http://urlshorta.herokuapps.com/1000
+  code http://urlshorta.herokuapp.com/1000
